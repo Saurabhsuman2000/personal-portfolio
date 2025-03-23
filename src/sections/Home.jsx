@@ -1,24 +1,43 @@
+import Typewriter from 'typewriter-effect';
+
 import profilemg from "../assets/profilemg.jpg";
+import profileimg from "../assets/profilemg1.png";
 import { FiDownload } from "react-icons/fi";
 import resume from "../assets/resume.pdf";
 
+import { TypeAnimation } from 'react-type-animation';
 function Home() {
   return (
     <section
-      id="#home"
-      className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15 "
+      id="home"
+      className="min-h-screen flex flex-col justify-center items-center lg:flex-row-reverse gap-9 lg:gap-15 z-2"
     >
-      <div className="text-center z-10 px-4">
+      <div className="text-center z-[0] px-4 relative">
         <img
           className="w-[400px] border-0 mt-20 rounded-full shadow-lg shadow-gray-600/70 lg:m-0 lg:max-w-[300px] object-cover object-bottom hover:translate-y-1 transition-all "
           src={profilemg}
-          alt="Profile Image"
+          alt="Saurabh Suman Image"
         />
       </div>
-      <div className="text-center font-mono z-10 px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl lg:max-w[500px] font-semibold mb-6 px-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-right ">
-          I am Saurabh Suman
+      <div className="text-center font-mono px-4 xl:w-[60%] z-50">
+        <h1 className="text-4xl md:text-5xl xl:text-6xl w-full max-w-full font-semibold mb-6 px-1 bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 bg-clip-text text-transparent leading-none text-wrap">
+          <span>I am</span>&nbsp;
+          <TypeAnimation
+            sequence={[
+              'Saurabh Suman', // First part
+              3000,
+              'Frontend Developer', // Second part
+              3000,
+              () => { },
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            style={{whiteSpace:'break-spaces'}}
+          />
+
         </h1>
+
         <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
           I am a frontend developer who loves creation interactive, scalable web
           applications. My purpose is to build solutions that offer dynamic UI,
@@ -26,7 +45,7 @@ function Home() {
         </p>
         <div className="flex justify-center items-center space-x-4">
           <a
-            className="bg-gradient-to-r flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:-translate-y-1   hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]  font-medium transition relative overflow-hidden"
+            className="bg-gradient-to-r flex flex-row from-teal-500 to-indigo-600 py-3 px-6 rounded hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]  font-medium transition relative overflow-hidden"
             href="#contact"
           >
             Contact Me

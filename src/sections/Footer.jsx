@@ -1,7 +1,7 @@
 import { FaXTwitter } from "react-icons/fa6";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { FaSquareGithub } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn  } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,28 +10,28 @@ function Footer() {
         <div className="flex gap-10 p-4 justify-center text-white ">
           <a
             href="#"
-            className="border p-2 text-2xl rounded hover:-translate-y-2 transition-all bg-black text-white "
+            className="border p-2 text-2xl rounded-full hover:scale-110 transition-all bg-gray-900 text-white duration-200 hover:bg-black"
             target="_blank"
           >
             <FaXTwitter />
           </a>
           <a
             href="#"
-            className="border p-2 text-2xl rounded hover:-translate-y-2 transition-all bg-[#0077B5] text-white "
+            className="border p-2 text-2xl rounded-full hover:scale-110 transition-all bg-gray-900 text-white duration-200 hover:bg-blue-500"
             target="_blank"
           >
-            <SlSocialLinkedin />
+            <FaLinkedinIn />
           </a>
           <a
             href="https://github.com/Saurabhsuman2000"
-            className="border p-2 text-2xl rounded hover:-translate-y-2 transition-all bg-gray-900 text-white "
+            className="border p-2 text-2xl rounded-full hover:scale-110 transition-all bg-gray-900 text-white duration-200 hover:bg-black"
             target="_blank"
           >
-            <FaSquareGithub />
+            <FaGithub />
           </a>
           <a
             href="https://www.instagram.com/saurabh_suman01/"
-            className="border p-2 text-2xl rounded hover:-translate-y-2 transition-all bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white "
+            className="border p-2 text-2xl rounded-full hover:scale-110 transition-all bg-gray-900 text-white duration-200 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500"
             target="_blank"
           >
             <FaInstagram />

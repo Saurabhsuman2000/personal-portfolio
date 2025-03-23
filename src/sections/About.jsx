@@ -17,12 +17,12 @@ function About() {
       className="min-h-screen font-mono flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="max-w-3xl text-4xl font-semibold mb-12 bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent text-center ">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="max-w-4xl text-4xl font-semibold mb-12 bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent text-center ">
             About Me
           </h2>
           <div className="p-8 mb-6 rounded-xl border-white/10 border-2 hover:-translate-y-1 transition-all ">
-            <p className="text-gray-300 mb-5 text-xl">
+            <p data-aos="fade-up" data-aos-delay="100" className="text-gray-300 mb-5 text-xl">
               Passionate developer with expertise in building scalable web
               applications and creating innovative solutions.
             </p>

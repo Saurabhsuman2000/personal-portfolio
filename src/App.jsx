@@ -1,4 +1,7 @@
 import { useState } from "react";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';  // Import AOS CSS
 import Navbar from "./Ui/Navbar";
 import MobileMenu from "./Ui/MobileMenu";
 import LoadingScreenAnimation from "./Ui/LoadingScreenAnimation";
@@ -10,11 +13,17 @@ import { Contact } from "./sections/Contact";
 import RevealOnScroll from "./Ui/RevealOnScroll";
 import Footer from "./sections/Footer";
 
+import StarsCanvas from "./Ui/StarCanvas";
+
 function App() {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   const [isLoading, setIsLoading] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
+      <StarsCanvas/>
       {!isLoading && (
         <LoadingScreenAnimation onComplete={() => setIsLoading(true)} />
       )}

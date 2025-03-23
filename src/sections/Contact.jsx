@@ -4,10 +4,10 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen font-mono flex items-center justify-center py-20 "
+      className="min-h-screen font-mono flex items-center justify-center py-20 w-full flex-grow-1"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="px-4 sm:w-150 w-[90%] mx-auto">
           <h2 className="max-w-3xl text-4xl font-semibold mb-12 bg-gradient-to-r from-teal-500 to-indigo-600 bg-clip-text text-transparent text-center ">
             Get In touch
           </h2>
@@ -25,7 +25,7 @@ export const Contact = () => {
                 name="name"
                 placeholder="Name..."
                 required
-                className="w-full bg-white/10 border border-r-white/10 rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
+                className="w-full bg-white/10 border rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
               />
             </div>
             <div className="relative">
@@ -35,7 +35,7 @@ export const Contact = () => {
                 name="email"
                 placeholder="example@gmail.com"
                 required
-                className="w-full bg-white/10 border border-r-white/10 rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
+                className="w-full bg-white/10 border rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
               />
             </div>
             <div className="relative">
@@ -46,7 +46,7 @@ export const Contact = () => {
                 rows={6}
                 placeholder="Type your message..."
                 required
-                className="w-full bg-white/10 border border-r-white/10 rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
+                className="w-full resize-none bg-white/10 border rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
               />
             </div>
 
