@@ -22,7 +22,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <>
+    <div className="relative z-[10]">
       <StarsCanvas/>
       {!isLoading && (
         <LoadingScreenAnimation onComplete={() => setIsLoading(true)} />
@@ -37,7 +37,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
