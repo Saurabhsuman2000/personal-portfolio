@@ -34,9 +34,19 @@ function Footer() {
           </a>
           <a
             href="https://www.instagram.com/saurabh_suman01/"
-            className="border p-2 text-2xl rounded-full hover:scale-110 transition-all bg-gray-900 text-white duration-200 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-500"
+            className="border p-2 text-2xl rounded-full bg-gray-900 text-white duration-200 ease-in-out transform hover:scale-110"
             target="_blank"
             rel="noopener noreferrer"
+            style={{
+              background: 'transparent', // Initial background
+              transition: 'all 0.2s ease-in-out', // Smooth transition for background
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = 'transparent';
+            }}
           >
             <FaInstagram />
           </a>

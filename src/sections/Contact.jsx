@@ -13,9 +13,9 @@ export const Contact = () => {
           </h2>
 
           <form
-              action="https://formsubmit.co/saurabhsuman720@gmail.com"
-                method="POST"
-                  className="space-y-6"
+            action="https://formsubmit.co/saurabhsuman720@gmail.com"
+            method="POST"
+            className="space-y-6"
           >
 
             <div className="relative">
@@ -49,13 +49,25 @@ export const Contact = () => {
                 className="w-full resize-none bg-white/10 border rounded  px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5 "
               />
             </div>
-
-            <button
-              type="submit"
-              className=" w-full bg-gradient-to-r flex justify-center cursor-pointer from-teal-500 to-indigo-600 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]  py-3 "
-            >
-              {" "}
-              Submit{" "}
+            
+            <button class="sendbutton place-self-center hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]" type="submit">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send</span>
             </button>
           </form>
         </div>

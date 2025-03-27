@@ -25,25 +25,25 @@ function Navbar({ isMenuOpen, setIsMenuOpen }) {
             <div className="hidden md:flex items-center space-x-8 ">
               <a
                 href="#home"
-                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all duration-150"
+                className="text-gray-300 text-xl hover:underline underline-offset-6 hover:text-white transition-all duration-150"
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all duration-150"
+                className="text-gray-300 text-xl hover:underline underline-offset-6 hover:text-white transition-all duration-150"
               >
                 About
               </a>
               <a
                 href="#projects"
-                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all duration-150"
+                className="text-gray-300 text-xl hover:underline underline-offset-6 hover:text-white transition-all duration-150"
               >
                 Projects
               </a>
               <a
                 href="#contact"
-                className="text-gray-300 text-lg hover:text-xl hover:text-white transition-all duration-150"
+                className="text-gray-300 text-xl hover:underline underline-offset-6 hover:text-white transition-all duration-150"
               >
                 Contact
               </a>
