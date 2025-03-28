@@ -14,13 +14,13 @@ function Home() {
     >
       <div className="hover:shadow-gray-500/50 hover:scale-105 hover:shadow-xl rounded-full transition-all duration-200 text-center mt-20 lg:m-0 z-[0] relative flex justify-center items-center size-[300px] sm:size-[400px] lg:max-w-[300px] lg:max-h-[300px]">
         <img
-          className="size-[300px] sm:w-[400px] border-0 rounded-full shadow-lg shadow-gray-600/70  lg:max-w-[300px] object-fit object-bottom transition-all transform aspect-square"
+          className="size-[350px] sm:w-[350px] border-0 rounded-full shadow-lg shadow-gray-600/70  lg:max-w-[360px] object-fit object-bottom transition-all transform aspect-square"
           src={profilemg}
           alt="Saurabh Suman Image"
         />
-        <div className="absolute inset-0 flex justify-center items-center h-full w-full aspect-square">
+        {/*<div className="absolute inset-0 flex justify-center items-center h-full w-full aspect-square">
           <div className="moving-circle h-full w-full"></div>
-        </div>
+        </div>*/}
       </div>
 
       <div className="text-center font-mono px-4 xl:w-[60%] z-50">
@@ -43,9 +43,7 @@ function Home() {
         </h1>
 
         <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto">
-          I am a frontend developer who loves creation interactive, scalable web
-          applications. My purpose is to build solutions that offer dynamic UI,
-          high performance and delightful UX.
+        Dedicated and enthusiastic Computer Science student with a strong foundation in data structures, algorithms, and web development. Passionate about problem-solving, coding, and building user-friendly applications.Eager to contribute and grow in a dynamic tech environment
         </p>
         <div className="flex justify-center items-center space-x-10">
           <a href='#contact' className="contactbutton text-white hover:bg-white hover:text-black">

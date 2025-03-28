@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import weather from "../assets/weather_appimg.webp";
-import ecommerce from "../assets/e-commerce-app.png";
-import food from "../assets/food-app.jpg";
+import weather from "../assets/weather_appimg.png";
+import ecommerce from "../assets/e-commerce-app.jpg";
+import expense from "../assets/expense_tracker.png";
 import travel from "../assets/travel-app.jpg";
 import RevealOnScroll from "../Ui/RevealOnScroll";
 
@@ -26,8 +26,8 @@ function Projects() {
       skills:["React","Node","Express","MongoDb"]
     },
     {
-      image: food,
-      name: "Food App",
+      image: expense,
+      name: "Expense_tracker",
       brief:
         "Developed a food delivery app using HTML, CSS, JavaScript, and React.js, featuring restaurant listings, online ordering, a shopping cart, and a responsive UI.",
       skills:["HTML","Tailwind","Javascript"]
